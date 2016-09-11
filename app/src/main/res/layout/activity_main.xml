@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2003.aplikasipengiriman.MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Pengiriman Pos "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/abc_action_button_min_width_overflow_material" />
+
+
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="304dp"
+            android:text="Nama Lengkap : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewNama"
+            android:layout_toEndOf="@+id/np"
+            android:layout_toRightOf="@+id/np"
+            android:ems="10"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/textViewNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="354dp"
+            android:text="No Telephone   : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewNo"
+            android:layout_alignLeft="@+id/nama"
+            android:layout_alignStart="@+id/nama"
+            android:ems="10"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/textViewNoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="404dp"
+            android:text="No Identitas      : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/noi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewNoi"
+            android:layout_alignLeft="@+id/no"
+            android:layout_alignStart="@+id/no"
+            android:ems="10"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNoi"
+            android:layout_alignStart="@+id/textViewNoi"
+            android:layout_alignTop="@+id/textViewNoi"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:checked="false"
+            android:text="SIM" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNoi"
+            android:layout_alignStart="@+id/textViewNoi"
+            android:layout_alignTop="@+id/textViewNoi"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:checked="false"
+            android:text="KTP" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNoi"
+            android:layout_alignStart="@+id/textViewNoi"
+            android:layout_alignTop="@+id/textViewNoi"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="40dp"
+            android:text="Pasport" />
+
+        <TextView
+            android:id="@+id/textViewAA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="484dp"
+            android:text="Alamat Pengirim      : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewAA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/textViewAA"
+            android:layout_below="@+id/textViewAA"
+            android:entries="@array/kota" />
+
+        <TextView
+            android:id="@+id/np"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="560dp"
+            android:text="Nama Penerima    : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/etnp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/np"
+            android:layout_toEndOf="@+id/hnama"
+            android:layout_toRightOf="@+id/hnama"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textViewAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="594dp"
+            android:text="Alamat Penerima      : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jp"
+            android:layout_alignStart="@+id/jp"
+            android:layout_alignTop="@+id/textViewAA"
+            android:layout_marginTop="130dp"
+            android:entries="@array/kota" />
+
+
+        <TextView
+            android:id="@+id/jp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="664dp"
+            android:text="Jenis Pengiriman      : "
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@+id/jp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="680dp">
+
+            <RadioGroup
+                android:id="@+id/jeniskelamin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/dokumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dokumen"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barang"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/uang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uang"
+                    android:textSize="15dp" />
+
+            </RadioGroup>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/buttonDaftar"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="760dp"
+            android:text="Daftar"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginTop="50dp"
+            android:text="Rincian Pengiriman"
+            android:textColor="@android:color/black"
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:id="@+id/hnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="150dp"
+            android:text="Nama Pengirim              :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/hno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="200dp"
+            android:text="No Telephon                :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="250dp"
+            android:text="No Identitas               :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hidentitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="300dp"
+            android:text="Identitas Yang digunakan   :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/halamatpeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="350dp"
+            android:text="Alamat Pengirim            :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hnamapener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="400dp"
+            android:text="Nama Penerima               :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/halamatpener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="450dp"
+            android:text="Alamat Penerima              :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hjp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDaftar"
+            android:layout_alignStart="@+id/buttonDaftar"
+            android:layout_below="@+id/buttonDaftar"
+            android:layout_marginLeft="-95dp"
+            android:layout_marginTop="500dp"
+            android:text="Jenis Pengiriman              :"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/gridLayout2"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignRight="@+id/gridLayout2"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+</ScrollView>

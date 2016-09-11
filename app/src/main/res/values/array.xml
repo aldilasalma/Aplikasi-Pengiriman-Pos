@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kota">
+        <item>Aceh</item>
+        <item>Bandung</item>
+        <item>Cilacap</item>
+        <item>Depok</item>
+        <item>Magetan</item>
+        <item>Malang</item>
+        <item>Surabya</item>
+        <item>Pasuruan</item>
+        <item>Probolinggo</item>
+    </string-array>
+
+</resources>
